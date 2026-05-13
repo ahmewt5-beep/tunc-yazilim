@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="absolute inset-0 z-0 pointer-events-none opacity-10 bg-[linear-gradient(rgba(0,229,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,229,255,0.1)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
       
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-6">
               <Terminal className="w-6 h-6 text-[#00e5ff]" />
@@ -54,10 +54,20 @@ export default function Footer() {
             <h4 className="text-white font-bold tracking-widest uppercase mb-6 text-sm">Kurumsal</h4>
             <ul className="space-y-4">
               <li><Link href="/hakkimizda" className="text-zinc-400 hover:text-[#00e5ff] text-sm transition-colors">Şirket Profili</Link></li>
+              <li><Link href="/sistem-durumu" className="text-zinc-400 hover:text-[#00e5ff] text-sm transition-colors">Sistem Durumu</Link></li>
               <li><Link href="/blog" className="text-zinc-400 hover:text-[#00e5ff] text-sm transition-colors">Mühendislik Blogu</Link></li>
+              <li><Link href="/kariyer" className="text-zinc-400 hover:text-[#00e5ff] text-sm transition-colors">Kariyer / İK</Link></li>
               <li><Link href="/iletisim" className="text-zinc-400 hover:text-[#00e5ff] text-sm transition-colors">İletişim & Destek</Link></li>
-              <li><Link href="/gizlilik-politikasi" className="text-zinc-400 hover:text-[#00e5ff] text-sm transition-colors">Gizlilik Politikası</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-bold tracking-widest uppercase mb-6 text-sm">Yasal</h4>
+            <ul className="space-y-4">
               <li><Link href="/kvkk" className="text-zinc-400 hover:text-[#00e5ff] text-sm transition-colors">KVKK</Link></li>
+              <li><Link href="/gizlilik-politikasi" className="text-zinc-400 hover:text-[#00e5ff] text-sm transition-colors">Gizlilik Politikası</Link></li>
+              <li><Link href="/kullanim-kosullari" className="text-zinc-400 hover:text-[#00e5ff] text-sm transition-colors">Kullanım Koşulları</Link></li>
+              <li><Link href="/cerez-politikasi" className="text-zinc-400 hover:text-[#00e5ff] text-sm transition-colors">Çerez Politikası</Link></li>
             </ul>
           </div>
         </div>
