@@ -65,7 +65,7 @@ export default function Globe() {
     <group>
       <points ref={pointsRef}>
         <bufferGeometry>
-          <bufferAttribute attach="attributes-position" count={particleCount} array={positions} itemSize={3} />
+          <bufferAttribute attach="attributes-position" args={[positions, 3]} />
         </bufferGeometry>
         <pointsMaterial size={0.03} color="#00e5ff" transparent opacity={0.6} sizeAttenuation={true} blending={THREE.AdditiveBlending} />
       </points>
@@ -73,7 +73,7 @@ export default function Globe() {
       {/* Ağ Bağlantı Çizgileri */}
       <lineSegments ref={linesRef}>
         <bufferGeometry>
-          <bufferAttribute attach="attributes-position" count={linePositions.length / 3} array={linePositions} itemSize={3} />
+          <bufferAttribute attach="attributes-position" args={[linePositions, 3]} />
         </bufferGeometry>
         <lineBasicMaterial color="#ffffff" transparent opacity={0.15} blending={THREE.AdditiveBlending} />
       </lineSegments>
